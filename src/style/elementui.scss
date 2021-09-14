@@ -1,0 +1,31 @@
+.el-tooltip__popper .popper__arrow,
+.el-tooltip__popper .popper__arrow::after {
+  border-top-color: darkseagreen !important;
+}
+.tooltip-style {
+  width: 80px;
+  background-color: darkseagreen !important;
+}
+.tooltip-text {
+  color: white;
+}
+.el-button:focus, .el-button:hover{
+    color: cadetblue;
+}
+
+
+// css Moudel替代scoped属性作用
+// <style module lang="scss">
+// .content {
+//   background-color: teal;
+//   width: '300px';
+//   height: '400px';
+// }
+// .tooltip-style {
+//   width: 80px;
+//   background-color: darkseagreen !important;
+// }
+// .tooltip-text {
+//   color: white;
+// }
+// </style>
