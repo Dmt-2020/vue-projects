@@ -41,7 +41,8 @@ import {
   Dialog,
   MessageBox,
   Divider,
-  Tree
+  Tree,
+  Card
 } from 'element-ui';
 import './style/main.css'
 import './style/elementui.scss'
@@ -97,7 +98,7 @@ Vue.use(Row)
 Vue.use(Dialog)
 Vue.use(Divider)
 Vue.use(Tree)
-
+Vue.use(Card)
 Vue.prototype.$msgbox = MessageBox;
 Vue.prototype.$confirm = MessageBox.confirm;
 

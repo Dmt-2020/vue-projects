@@ -6,7 +6,7 @@
         <el-radio-button :label="true">收起</el-radio-button>
       </el-radio-group>
       <el-menu
-        default-active="1-1"
+      default-active="1-1"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
@@ -42,7 +42,8 @@
     </div>
     <!-- 主体部分 -->
     <div class="main-float-right">
-      <router-view></router-view>
+      <router-view>
+      </router-view>
     </div>
   </div>
 </template>
@@ -50,6 +51,9 @@
 <script>
 export default {
   name: "Home",
+  components:{
+    // Program:()=>import('./program/SelfTable.vue')
+  },
   data() {
     return {
       isCollapse: false,
@@ -75,12 +79,12 @@ export default {
 }
 .main-left {
   display: inline-block;
-  width: 22%;
+  width: 20%;
 }
 .main-float-right {
   float: right;
-  margin: 20px 0 0 20px;
-  width: 75%;
+  margin: 20px 20px 0 20px;
+  width: 76%;
 }
 a {
   text-decoration: none;

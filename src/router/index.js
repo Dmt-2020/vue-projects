@@ -16,9 +16,10 @@ const routes = [
         children: [
           { path: '/program/table', component: () => import('../views/program/ProgramTable.vue') },
           { path: '/program/form', component: () => import('../views/program/ProgramForm.vue') },
-          { path: '/program/sass', component: () => import('../views/program/SassTest.vue') },
+          { path: '/program/video', component: () => import('../views/program/Video.vue') },
           { path: '/program/preproject', component: () => import('../views/program/PreProject.vue') },
           { path: '/program/virtualtable', component: () => import('../views/program/VirtualTable.vue') },
+          { path: '/program/selftable', component: () => import('../views/program/SelfTable.vue') },
         ]
       },
       {
