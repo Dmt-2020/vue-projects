@@ -32,13 +32,13 @@ export default {
       if (navigator.mediaDevices === undefined) {
         navigator.mediaDevices = {}
       }
-      navigator.mediaDevices.getUserMedia({video:true}) //audio:true,
+      navigator.mediaDevices.getUserMedia({video:true}) //唤起摄像头   还可以配置audio:true,
       .then(stream =>{
-        console.log(stream.getTracks());
+        console.log(stream.getTracks());  //获取轨道，比如如果上一步配置了摄像头和录音机，则该数组会有两个值
         this.mediaStreamTrack = typeof stream.stop === "function"?stream :stream.getTracks()[0]
         this.video_stream = stream
         this.$refs.video.srcObject = stream
-        this.$refs.video.play()
+        this.$refs.video.play()  //调用video原生的方法
       })
       .catch(err=>{
         console.log(err);
